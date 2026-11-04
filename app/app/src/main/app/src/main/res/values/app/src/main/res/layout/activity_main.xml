@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="6dp">
+        <EditText android:id="@+id/q" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:hint="Search place" android:singleLine="true"
+            android:imeOptions="actionSearch" />
+        <Button android:id="@+id/search" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Search" />
+    </LinearLayout>
+    <org.osmdroid.views.MapView android:id="@+id/map" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" />
+    <TextView android:id="@+id/coords" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="8dp" android:text="Tap the map to choose a location" android:textSize="15sp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical" android:paddingHorizontal="8dp">
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/route" android:layout_width="0dp"
+            android:layout_weight="1" android:layout_height="wrap_content" android:text="Route mode" />
+        <EditText android:id="@+id/speed" android:layout_width="64dp" android:layout_height="wrap_content"
+            android:inputType="number" android:text="30" android:gravity="center" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" km/h" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="4dp">
+        <Button android:id="@+id/start" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="Start" />
+        <Button android:id="@+id/stop" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:text="Stop" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="4dp">
+        <Button android:id="@+id/save" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:text="Save" />
+        <Button android:id="@+id/favs" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:text="Favorites" />
+        <Button android:id="@+id/clear" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:text="Clear" />
+        <Button android:id="@+id/dev" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:text="Dev" />
+    </LinearLayout>
+</LinearLayout>
